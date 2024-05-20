@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('Screenshot 2024-05-10 102408.png');
+            background-size: cover;
+        }
+
+        .logo {
+            color: aquamarine;
+            font-size:3rem;
+            letter-spacing:2px;
+            animation: alternate;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+           /* background:white;*/
+            font-family: sans-serif;
+        }
+        .menu a{
+            text-decoration:none;
+            list-style: none;
+            color:white;
+            padding:10px 20px;
+            font-size: 20px;
+            position:relative;
+        }
+        .menu a:before{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:0%;
+            height:100%;
+            border-bottom:2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .register a{
+            text-decoration:none;
+            color:white;
+            padding:10px 20px;
+            font-size:20px;
+            background:indianred;
+            border-radius:9px;
+            transition:0.4s linear;
+        }
+        .register a:hover{
+            background:transparent;
+            border:1px solid indianred;
+        }
+
+
+        .h-txt a{
+            text-decoration:none;
+            color:white;
+            font-size:35px;
+            border:2px solid red;
+            background-color:indianred;
+            border-radius:18px;
+            padding:10px 20px;
+        }
+        .h-txt a:hover{
+            background:transparent;
+            border:1px solid indianred;
+        }
+        .h-txt{
+            max-width:650px;
+            position:absolute;
+            top:50%;
+            left:50%;
+            color:white;
+            transform:translate(-50%,-50%);
+            text-align:center;
+        }
+        .h-txt span{
+             font-size:30px;
+             letter-spacing:2px ;
+        }
+        .h-txt h1{
+            font-size:3.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">BaPu</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">hill stations</a>
+                <a href="#">best offer's</a>
+                <a href="#">our sites</a>
+                <a href="#">contacts</a>
+            </div>
+            <div class="register"><a href="#">Register</a></div>
+        </nav>
+        <section class="h-txt">
+            <span>Enjoy</span>
+            <h1>BaPu Travel Agency</h1>
+            <br>
+            <a href="#">Book Your Trip</a>
+        </section>
+    </header>
+
+</body>
+
+</html>
